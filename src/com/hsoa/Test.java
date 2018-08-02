@@ -14,7 +14,6 @@ import com.bpm_to_sap.SI_BPM_SAP_ASSET_SEARCH_OUTServiceLocator;
 
 public class Test {
 	
-
 	public static void main(String[] args) throws RemoteException, ServiceException, MalformedURLException {
 	        DT_BPM_SAP_ASSET_SEARCH assetSearch=new DT_BPM_SAP_ASSET_SEARCH();
 	        assetSearch.setANLN1("10000050");
