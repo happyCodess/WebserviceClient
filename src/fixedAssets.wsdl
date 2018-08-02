@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="SI_BPM_SAP_ASSET_SEARCH_OUT"
+	targetNamespace="http://bpm_to_sap.com" xmlns:p1="http://bpm_to_sap.com"
+	xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+	xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+	<wsdl:documentation />
+	<wsp:UsingPolicy wsdl:required="true" />
+	<wsp:Policy wsu:Id="OP_SI_BPM_SAP_ASSET_SEARCH_OUT" />
+	<wsdl:types>
+		<xsd:schema targetNamespace="http://bpm_to_sap.com"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://bpm_to_sap.com">
+			<xsd:element name="MT_BPM_SAP_ASSET_SEARCH_MSG" type="DT_BPM_SAP_ASSET_SEARCH_MSGDTLIST" />
+			<xsd:element name="MT_BPM_SAP_ASSET_SEARCH" type="DT_BPM_SAP_ASSET_SEARCH" />
+			<xsd:complexType name="DT_BPM_SAP_ASSET_SEARCH_MSG">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">509bb95c801c11e8b07e00000091353e
+					</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="ANLN1" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb16c801c11e8cdaa5800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>资产编号</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="EQUNR" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb16d801c11e8cb325800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>设备编号</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="BUKRS" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb16e801c11e886255800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>公司</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="TXT50" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb16f801c11e8a5775800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>资产描述</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="SERNR" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb170801c11e888175800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>规格型号</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="AKTIV" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb171801c11e8cf275800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>入账日期</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="AFBLPE" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb172801c11e895515800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>资产原值</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="KANSW" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb173801c11e8b6df5800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>已提折旧</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="ZSBZT" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb174801c11e8c3b35800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>设备状态</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="GDLGRP" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb175801c11e8996d5800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>资产责任人工号</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="ZNAME" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">d53cb176801c11e8b4655800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>资产责任人姓名</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="DT_BPM_SAP_ASSET_SEARCH">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">3f85d885801c11e8921100000091353e
+					</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="ANLN1" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">3f42b412801c11e89ced5800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>资产编号</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+					<xsd:element name="EQUNR" type="xsd:string">
+						<xsd:annotation>
+							<xsd:appinfo source="http://sap.com/xi/TextID">3f42b413801c11e890745800e3fb823f
+							</xsd:appinfo>
+							<xsd:documentation>设备编号</xsd:documentation>
+						</xsd:annotation>
+					</xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:complexType name="DT_BPM_SAP_ASSET_SEARCH_MSGDTLIST">
+				<xsd:annotation>
+					<xsd:appinfo source="http://sap.com/xi/VersionID">f684bd35801c11e8913500000091353e
+					</xsd:appinfo>
+				</xsd:annotation>
+				<xsd:sequence>
+					<xsd:element name="MSGLIST" type="DT_BPM_SAP_ASSET_SEARCH_MSG"
+						maxOccurs="unbounded" />
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="MT_BPM_SAP_ASSET_SEARCH">
+		<wsdl:documentation />
+		<wsdl:part name="MT_BPM_SAP_ASSET_SEARCH" element="p1:MT_BPM_SAP_ASSET_SEARCH" />
+	</wsdl:message>
+	<wsdl:message name="MT_BPM_SAP_ASSET_SEARCH_MSG">
+		<wsdl:documentation />
+		<wsdl:part name="MT_BPM_SAP_ASSET_SEARCH_MSG" element="p1:MT_BPM_SAP_ASSET_SEARCH_MSG" />
+	</wsdl:message>
+	<wsdl:portType name="SI_BPM_SAP_ASSET_SEARCH_OUT">
+		<wsdl:documentation />
+		<wsdl:operation name="SI_BPM_SAP_ASSET_SEARCH_OUT">
+			<wsdl:documentation />
+			<wsp:Policy>
+				<wsp:PolicyReference URI="#OP_SI_BPM_SAP_ASSET_SEARCH_OUT" />
+			</wsp:Policy>
+			<wsdl:input message="p1:MT_BPM_SAP_ASSET_SEARCH" />
+			<wsdl:output message="p1:MT_BPM_SAP_ASSET_SEARCH_MSG" />
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="SI_BPM_SAP_ASSET_SEARCH_OUTBinding"
+		type="p1:SI_BPM_SAP_ASSET_SEARCH_OUT">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+		<wsdl:operation name="SI_BPM_SAP_ASSET_SEARCH_OUT">
+			<soap:operation soapAction="http://sap.com/xi/WebService/soap1.1"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+			<wsdl:input>
+				<soap:body use="literal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="SI_BPM_SAP_ASSET_SEARCH_OUTService">
+		<wsdl:port name="HTTP_Port" binding="p1:SI_BPM_SAP_ASSET_SEARCH_OUTBinding">
+			<soap:address
+				location="http://posv5.hspharm.com:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_BPM_DEV&amp;receiverParty=&amp;receiverService=&amp;interface=SI_BPM_SAP_ASSET_SEARCH_OUT&amp;interfaceNamespace=http%3A%2F%2Fbpm_to_sap.com"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+		</wsdl:port>
+		<wsdl:port name="HTTPS_Port" binding="p1:SI_BPM_SAP_ASSET_SEARCH_OUTBinding">
+			<soap:address
+				location="https://posv5.hspharm.com:50001/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_BPM_DEV&amp;receiverParty=&amp;receiverService=&amp;interface=SI_BPM_SAP_ASSET_SEARCH_OUT&amp;interfaceNamespace=http%3A%2F%2Fbpm_to_sap.com"
+				xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
